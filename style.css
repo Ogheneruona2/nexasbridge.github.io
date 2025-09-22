@@ -46,13 +46,9 @@ nav a:hover {
 }
 
 main {
-    padding: 40px 20px;
+    padding: 20px;
     max-width: 960px;
     margin: auto;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    margin-top: 20px;
 }
 
 ul {
@@ -64,7 +60,6 @@ li {
     background: #f9fafb;
     margin: 5px 0;
     padding: 15px;
-    border-radius: 5px;
     border-left: 4px solid #3b82f6;
 }
 
@@ -74,4 +69,107 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* Styling for Logo */
+.logo-container {
+    padding: 10px 0;
+}
+
+.site-logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Homepage Specific Styling */
+.tagline {
+    font-size: 1.2em;
+    color: #e0e7ff;
+    margin-top: 10px;
+}
+
+.home-main {
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.hero-section h2 {
+    font-size: 2.2em;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #3b82f6;
+    color: white;
+    border: 2px solid #3b82f6;
+}
+
+.primary-button:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+}
+
+.secondary-button:hover {
+    background-color: #e0f2fe;
+    color: #2563eb;
+}
+
+.mission-vision {
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.mission-vision h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.mission-vision p {
+    max-width: 800px;
+    margin: 0 auto;
 }
