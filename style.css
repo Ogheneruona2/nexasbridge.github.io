@@ -299,8 +299,8 @@ li {
 .moving-logo-container {
     overflow: hidden;
     padding: 20px 0;
-    background-color: #1a202c; /* A solid background to separate it from the main content */
-    margin-top: 50px; /* Adds space above the moving logo */
+    background-color: #1a202c;
+    margin-top: 50px;
     box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
 }
 
@@ -308,10 +308,28 @@ li {
     max-width: 200px;
     animation: move-logo 20s linear infinite;
     will-change: transform;
-    filter: grayscale(100%) brightness(1.8); /* Faded and lightened look */
+    filter: grayscale(100%) brightness(1.8);
 }
 
 @keyframes move-logo {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
+
+/* New Contact Page Styling */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: rgba(31, 41, 55, 0.7);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(16,
