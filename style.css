@@ -394,6 +394,21 @@ li {
     background-color: #128c7e;
 }
 
+.phone-whatsapp-icon-container {
+    position: relative;
+    width: 1.5em; /* Match icon size */
+    height: 1.5em;
+}
+
+.whatsapp-contact-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    color: #a5b4fc;
+}
+
 @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
