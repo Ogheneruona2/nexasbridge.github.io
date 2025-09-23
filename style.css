@@ -1,6 +1,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #101827;
+    background-image: url('images/hero_background.png'); /* The new background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: move-background 30s linear infinite; /* This makes the background move */
     color: #cbd5e1;
     line-height: 1.6;
     margin: 0;
@@ -8,17 +12,10 @@ body {
 }
 
 header {
-    background: #1f2937;
+    background: rgba(31, 41, 55, 0.7); /* Added transparency to see the background */
     color: white;
     padding: 40px 20px;
     text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-    color: #93c5fd;
 }
 
 h2 {
@@ -32,7 +29,7 @@ h2 {
 }
 
 nav {
-    background: #1f2937;
+    background: rgba(31, 41, 55, 0.7); /* Added transparency */
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
@@ -56,7 +53,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: transparent;
+    background-color: rgba(16, 24, 39, 0.7); /* Added transparency */
     box-shadow: none;
     border-radius: 0;
     margin-top: 0;
@@ -68,7 +65,7 @@ ul {
 }
 
 li {
-    background: #1f2937;
+    background: rgba(31, 41, 55, 0.7); /* Added transparency */
     color: #cbd5e1;
     margin: 5px 0;
     padding: 15px;
@@ -77,7 +74,7 @@ li {
 }
 
 footer {
-    background: #1f2937;
+    background: rgba(31, 41, 55, 0.7); /* Added transparency */
     color: #cbd5e1;
     text-align: center;
     padding: 20px;
@@ -91,15 +88,15 @@ footer {
 }
 
 .site-logo {
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
 }
 
 /* Homepage Specific Styling */
 .tagline {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #e0f2fe;
     margin-top: 10px;
 }
@@ -117,7 +114,7 @@ footer {
 .hero-section {
     text-align: center;
     padding: 80px 40px;
-    background: linear-gradient(135deg, #1f2937, #312e81);
+    background: rgba(31, 41, 55, 0.7); /* Added transparency */
     color: #cbd5e1;
     border-radius: 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
@@ -182,7 +179,7 @@ footer {
 
 .mission-vision {
     padding: 60px 40px;
-    background-color: #1f2937;
+    background-color: rgba(31, 41, 55, 0.7); /* Added transparency */
     border-radius: 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
@@ -205,17 +202,17 @@ footer {
 .logo-carousel-section {
     padding: 40px 20px;
     text-align: center;
-    background-color: #1f2937;
+    background-color: rgba(31, 41, 55, 0.7); /* Added transparency */
 }
 
 .logo-carousel-section h2 {
-    font-size: 2.5em; /* Heading is now larger */
+    font-size: 2.5em;
     margin-bottom: 30px;
-    color: #e0f2fe; /* Light cyan color for heading */
-    font-weight: bold; /* Make the heading bold */
+    color: #e0f2fe;
+    font-weight: bold;
     padding-bottom: 10px;
-    border-bottom: 2px solid #4b5563; /* Add a professional-looking bottom border */
-    display: inline-block; /* Helps with border and spacing */
+    border-bottom: 2px solid #4b5563;
+    display: inline-block;
 }
 
 .logo-carousel-container {
@@ -226,7 +223,7 @@ footer {
 
 .logo-carousel-track {
     display: inline-block;
-    animation: scroll-logos 30s linear infinite;
+    animation: scroll-logos 15s linear infinite;
     will-change: transform;
 }
 
@@ -245,4 +242,10 @@ footer {
 @keyframes scroll-logos {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+
+@keyframes move-background {
+    0% { background-position: 50% 0%; }
+    50% { background-position: 50% 100%; }
+    100% { background-position: 50% 0%; }
 }
