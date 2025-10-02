@@ -232,3 +232,16 @@
     line-height: 1.6;
     color: #374151; /* softer gray */
 }
+/* Center the Our Strategic Partners section */
+.logo-carousel-section {
+    text-align: center;   /* centers the heading and logos */
+    margin: 50px auto;    /* adds space and keeps it centered */
+}
+
+.logo-carousel-section h2 {
+    text-align: center;   /* makes sure the heading is centered */
+    font-size: 2rem;      /* nice size */
+    margin-bottom: 20px;  /* spacing below heading */
+    color: #111827;       /* dark color for readability */
+}
+
