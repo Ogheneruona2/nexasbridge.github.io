@@ -56,5 +56,49 @@
 .main-footer {
     position: relative; /* so absolute positioning works */
 }
+/* Center the header */
+.header-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Center logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.site-logo {
+    max-width: 150px; /* adjust smaller/bigger as you want */
+    height: auto;
+}
+
+/* Center navigation */
+.centered-nav {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.centered-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.centered-nav a:hover {
+    color: #0073e6;
+}
+
+/* Tagline under nav */
+.tagline {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
 
 
