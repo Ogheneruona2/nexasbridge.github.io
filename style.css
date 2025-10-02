@@ -1,143 +1,35 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+/* --- Logo Carousel Styling --- */
+.logo-carousel-container {
+    overflow: hidden;   /* hides overflow so logos don’t break out */
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
 }
 
-/* Header */
-header {
-    background: #f8f9fa; /* Light gray/white header */
-    color: #000000;
-    padding: 20px 40px;
-    border-bottom: 1px solid #ddd;
-}
-
-.header-container {
+.logo-carousel-track {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 40px;  /* spacing between logos */
+    animation: scroll-logos 20s linear infinite; /* makes them move */
 }
 
-h2 {
-    color: #2563eb; /* Accent color */
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 15px;
-    margin-top: 25px;
-    font-size: 2.2em;
-    font-weight: bold;
-    display: inline-block;
+.logo-carousel-track img {
+    height: 50px;   /* adjust logo size */
+    width: auto;    /* keeps proportions */
+    object-fit: contain;
+    filter: grayscale(100%);  /* optional: makes them grey for uniform look */
+    transition: filter 0.3s;
 }
 
-/* Navigation */
-nav a {
-    color: #2563eb;
-    text-decoration: none;
-    padding: 12px 15px;
-    font-weight: bold;
-    display: inline-block;
-    transition: color 0.3s ease;
+.logo-carousel-track img:hover {
+    filter: grayscale(0%); /* show full color on hover */
 }
 
-nav a:hover {
-    color: #1e40af; /* Darker blue */
-}
-
-/* Main content */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-/* Sections */
-.mission-vision,
-.hero-section,
-.logo-carousel-section,
-.portfolio-section,
-.contact-section,
-.team-members,
-.hidden-partners-section {
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 40px 20px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-/* Footer */
-.main-footer {
-    background: #f1f5f9;
-    color: #000000;
-    padding: 40px 20px;
-    font-size: 0.9em;
-    border-top: 1px solid #ddd;
-}
-
-.footer-logo {
-    max-width: 180px;
-    margin-bottom: 15px;
-}
-
-/* Portfolio */
-.portfolio-item {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details h3 {
-    color: #2563eb;
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 10px;
-}
-
-/* Buttons */
-.button,
-.whatsapp-button {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.primary-button {
-    background-color: #2563eb;
-    color: #ffffff;
-    border: none;
-}
-
-.primary-button:hover {
-    background-color: #1e40af;
-}
-
-.secondary-button {
-    background-color: transparent;
-    color: #2563eb;
-    border: 2px solid #2563eb;
-}
-
-.secondary-button:hover {
-    background-color: #eff6ff;
+/* Animation for scrolling logos */
+@keyframes scroll-logos {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
