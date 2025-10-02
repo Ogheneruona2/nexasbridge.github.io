@@ -195,4 +195,40 @@
     line-height: 1.6;
 }
 
+/* Center About Us, Our Vision, and other text sections */
+.mission-vision {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;  /* center horizontally + add spacing */
+}
 
+.mission-vision h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #111827; /* dark gray for readability */
+}
+
+.mission-vision p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151; /* softer gray */
+}
+
+/* Center About Us, Our Vision, and other text sections */
+.mission-vision {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;  /* center horizontally + add spacing */
+}
+
+.mission-vision h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #111827; /* dark gray for readability */
+}
+
+.mission-vision p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151; /* softer gray */
+}
