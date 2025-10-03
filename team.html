@@ -1,132 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - NexasBridge</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - NexasBridge</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .team-section {
+      text-align: center;
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .team-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .team-section p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .team-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #eee;
+    }
+
+    .team-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.3em;
+    }
+
+    .member-title {
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .member-collaboration {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    .member-bio {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    /* Extended Network */
+    .hidden-partners-section {
+      margin-top: 60px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hidden-partners-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    .hidden-partners-section p {
+      font-size: 1em;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-    <div class="header-container">
-        <div class="logo-container">
-            <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="site-logo">
-        </div>
-        <nav class="centered-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="initiatives.html">Initiatives</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="team.html">Team</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <p class="tagline">Proven Support for Bold Futures</p>
-    </div>
-</header>
+  <section class="team-section">
+    <h1>Meet Our Team</h1>
+    <p>A collective of experts passionate about driving innovation.</p>
 
-    </header>
-
-    <main class="home-main">
-        <section class="about-hero">
-            <h1 class="page-title">Meet Our Team</h1>
-            <p class="about-tagline">A collective of experts passionate about driving innovation.</p>
-        </section>
-
-<section class="team-members">
-
-    <!-- Jeff Fowler -->
-<div class="team-member-card">
-    <div class="member-header">
+    <div class="team-grid">
+      <!-- Jeff -->
+      <div class="team-card">
         <img src="images/jeff_fowler.png" alt="Jeff Fowler" class="team-photo">
         <h3>Jeff Fowler</h3>
         <p class="member-title">Founder | Partner | Investor</p>
         <p class="member-collaboration">Collaboration with Kenetic Capital</p>
-    </div>
-    <div class="member-bio">
-        <p>Jeff Fowler is the visionary co-founder of NexasBridge, dedicated to empowering bold entrepreneurs and innovative projects. With a passion for strategy, innovation, and growth, he helps bridge great ideas with the resources and networks they need to thrive.</p>
-    </div>
-</div>
+        <p class="member-bio">Jeff Fowler is the visionary co-founder of NexasBridge, dedicated to empowering bold entrepreneurs and innovative projects.</p>
+      </div>
 
-<!-- Nicholas Heldfond -->
-<div class="team-member-card">
-    <div class="member-header">
+      <!-- Nicholas -->
+      <div class="team-card">
         <img src="images/nicholas_heldfond.png" alt="Nicholas Heldfond" class="team-photo">
         <h3>Nicholas Heldfond</h3>
         <p class="member-title">Co-Founder | Partner | Investor</p>
         <p class="member-collaboration">Collaboration with Kenetic Capital</p>
-    </div>
-    <div class="member-bio">
-        <p>Nicholas collaborates with Kenetic Capital to support innovative ventures, combining entrepreneurship and investment to drive lasting impact. Kenetic Capital has invested in early-stage blockchain and crypto technology that is reshaping the world, leveraging their global reach from Asian roots.</p>
-    </div>
-</div>
+        <p class="member-bio">Nicholas collaborates with Kenetic Capital to support innovative ventures, combining entrepreneurship and investment to drive lasting impact.</p>
+      </div>
 
-</section>
+      <!-- Walter -->
+      <div class="team-card">
+        <img src="images/walter_kowtoniuk.png" alt="Walter Kowtoniuk" class="team-photo">
+        <h3>Walter Kowtoniuk</h3>
+        <p class="member-title">Advisor | Partner | Investor</p>
+        <p class="member-collaboration">Collaboration with Third Rock Ventures</p>
+        <p class="member-bio">Walter is passionate about improving patient lives by turning genetics and genomics insights into new medicines.</p>
+      </div>
 
-            </div>
-
-            <div class="team-member-card">
-                <div class="member-header">
-                    <img src="images/Walter_Kowtoniuk.png" alt="Walter Kowtoniuk" class="team-photo">
-                    <h3>Walter Kowtoniuk</h3>
-                    <p class="member-title">Advisor | Partner | Investor</p>
-                    <p class="member-collaboration">Collaboration with Third Rock Ventures</p>
-                </div>
-                <div class="member-bio">
-                    <p>Walt is passionate about improving patient lives by turning genetics and genomics insights into new medicines. He focuses on building patient-centered companies and values listening to those they aim to help. His proudest achievement is raising three kind and curious children.</p>
-                    <p class="partner-details">Third Rock Ventures builds and invests in life sciences companies that push the boundaries of medicine. They partner with visionary scientists and entrepreneurs to turn groundbreaking research into transformative therapies.</p>
-                </div>
-            </div>
-
-            <div class="team-member-card">
-                <div class="member-header">
-                    <img src="images/Howard_Greenfield.png" alt="Howard Greenfield" class="team-photo">
-                    <h3>Howard Greenfield</h3>
-                    <p class="member-title">Operating Partner | Investor</p>
-                    <p class="member-collaboration">Collaboration with Canaan Partner</p>
-                </div>
-                <div class="member-bio">
-                    <p>Howard Greenfield is an Operating Partner at Canaan, helping portfolio companies with go-to-market strategy, sales, marketing, partnerships, and customer success. He brings decades of leadership experience as a CRO, having scaled companies like SailPoint, Centrify, and Zenprise through major growth and acquisitions.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="hidden-partners-section">
-            <h2>Our Extended Network</h2>
-            <p>Our capabilities are amplified by an extensive network of strategic partners who operate discreetly. These trusted collaborators provide us with invaluable expertise, confidential insights, and crucial access to opportunities, ensuring we can deliver maximum value to our ventures without exception.</p>
-        </section>
-
-        <section class="logo-carousel-section">
-            <h2>Our Strategic Partners</h2>
-            <div class="logo-carousel-container">
-                <div class="logo-carousel-track">
-                    <img src="images/bd_logo.png" alt="BD Logo">
-                    <img src="images/bird_logo.png" alt="Bird Logo">
-                    <img src="images/credit_logo.png" alt="Credit Logo">
-                    <img src="images/digent_logo.png" alt="Digent Logo">
-                    <img src="images/myboy_logo.png" alt="Myboy Logo">
-                    <img src="images/techtrendske_logo.png" alt="Techtrendske Logo">
-                    <img src="images/wordcrypto_logo.png" alt="Wordcrypto Logo">
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <div class="moving-logo-container">
+      <!-- Howard -->
+      <div class="team-card">
+        <img src="images/howard_greenfield.png" alt="Howard Greenfield" class="team-photo">
+        <h3>Howard Greenfield</h3>
+        <p class="member-title">Operating Partner | Investor</p>
+        <p class="member-collaboration">Collaboration with Canaan Partner</p>
+        <p class="member-bio">Howard Greenfield helps portfolio companies with go-to-market strategy, sales, and customer success.</p>
+      </div>
     </div>
 
-    <footer class="main-footer">
-        <div class="footer-content-wrapper">
-            <div class="footer-left">
-                <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="footer-logo">
-                <p>NexasBridge offers comprehensive support for emerging projects, from innovative funding to strategic resources, empowering bold futures.</p>
-            </div>
-        </div>
-        <div class="footer-bottom-text">
-            <p>© 2025 NexasBridge. All rights reserved.</p>
-        </div>
-    </footer>
+    <section class="hidden-partners-section">
+      <h2>Our Extended Network</h2>
+      <p>Our capabilities are amplified by an extensive network of strategic partners who operate discreetly. These trusted collaborators provide invaluable expertise, confidential insights, and crucial access to opportunities.</p>
+    </section>
+  </section>
 
 </body>
 </html>
