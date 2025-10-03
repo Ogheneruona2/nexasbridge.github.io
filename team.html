@@ -1,147 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Our Team - NexasBridge</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- keeps your global styles -->
   <style>
-    .team-section {
-      text-align: center;
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    /* Local styles to ensure header + team look correct even if style.css differs */
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#111; background:#fff; }
+    .header-container { text-align:center; padding:20px 16px; border-bottom:1px solid #eee; }
+    .site-logo { max-width:140px; height:auto; display:block; margin:0 auto 8px; }
+    .centered-nav { display:inline-block; margin:8px 0; }
+    .centered-nav a { margin:0 12px; color:#333; text-decoration:none; font-weight:500; }
+    .centered-nav a:hover { color:#0b63d6; }
 
-    .team-section h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
+    .tagline { margin:8px 0 0; font-style:italic; color:#666; font-size:0.95rem; }
 
-    .team-section p {
-      font-size: 1.2em;
-      color: #555;
-      margin-bottom: 40px;
-    }
+    .team-section { max-width:1100px; margin:40px auto; padding:24px; text-align:center; }
+    .team-section h1 { font-size:2.2rem; margin:6px 0 8px; }
+    .team-section p.lead { color:#555; margin-bottom:28px; font-size:1.05rem; }
 
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      justify-items: center;
-    }
+    .team-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:26px; align-items:start; }
 
     .team-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
-
-    .team-card:hover {
-      transform: translateY(-5px);
+      background:#fff;
+      border-radius:10px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(14,20,30,0.06);
+      text-align:center;
     }
 
     .team-photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid #eee;
+      width:120px;
+      height:120px;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+      margin:0 auto 12px;
+      border:3px solid #f0f0f0;
+      background:#f6f6f6;
     }
 
-    .team-card h3 {
-      margin: 10px 0 5px;
-      font-size: 1.3em;
-    }
+    .team-card h3 { margin:8px 0 6px; font-size:1.15rem; }
+    .member-title { font-weight:600; color:#333; margin-bottom:6px; }
+    .member-collaboration { color:#777; font-size:0.9rem; margin-bottom:10px; }
+    .member-bio { color:#444; font-size:0.95rem; line-height:1.5; }
 
-    .member-title {
-      font-weight: bold;
-      color: #444;
-      margin-bottom: 8px;
-    }
+    /* footer */
+    .main-footer { margin-top:40px; padding:22px 12px; background:#fafafa; border-top:1px solid #eee; position:relative; text-align:center; }
+    .corner-logo { height:30px; position:absolute; right:12px; bottom:10px; }
 
-    .member-collaboration {
-      font-size: 0.9em;
-      color: #777;
-      margin-bottom: 12px;
-    }
-
-    .member-bio {
-      font-size: 0.95em;
-      color: #555;
-    }
-
-    /* Extended Network */
-    .hidden-partners-section {
-      margin-top: 60px;
-      text-align: center;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .hidden-partners-section h2 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-    }
-    .hidden-partners-section p {
-      font-size: 1em;
-      color: #666;
+    /* responsive */
+    @media (max-width:520px) {
+      .team-photo { width:100px; height:100px; }
+      .centered-nav a { margin:0 8px; font-size:0.95rem; }
     }
   </style>
 </head>
 <body>
 
-  <section class="team-section">
-    <h1>Meet Our Team</h1>
-    <p>A collective of experts passionate about driving innovation.</p>
+  <!-- Header (centered) -->
+  <header class="header-container">
+    <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="site-logo">
+    <nav class="centered-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="tagline">Proven Support for Bold Futures</div>
+  </header>
 
-    <div class="team-grid">
-      <!-- Jeff -->
-      <div class="team-card">
-        <img src="images/jeff_fowler.png" alt="Jeff Fowler" class="team-photo">
-        <h3>Jeff Fowler</h3>
-        <p class="member-title">Founder | Partner | Investor</p>
-        <p class="member-collaboration">Collaboration with Kenetic Capital</p>
-        <p class="member-bio">Jeff Fowler is the visionary co-founder of NexasBridge, dedicated to empowering bold entrepreneurs and innovative projects.</p>
+  <!-- Team -->
+  <main>
+    <section class="team-section">
+      <h1>Meet Our Team</h1>
+      <p class="lead">A collective of experts passionate about driving innovation.</p>
+
+      <div class="team-grid">
+        <!-- Jeff Fowler -->
+        <article class="team-card" aria-labelledby="jeff-name">
+          <img class="team-photo"
+               src="images/jeff_fowler.png"
+               alt="Jeff Fowler"
+               onerror="if(!this.dataset.t){this.dataset.t=1;this.src='images/Jeff_Fowler.png';}else if(!this.dataset.u){this.dataset.u=1;this.src='images/jeff_fowler.jpg';}else{this.style.display='none';}">
+          <h3 id="jeff-name">Jeff Fowler</h3>
+          <div class="member-title">Founder | Partner | Investor</div>
+          <div class="member-collaboration">Collaboration with Kenetic Capital</div>
+          <p class="member-bio">Jeff is the visionary co-founder of NexasBridge, focused on strategy, growth and connecting founders to the right networks.</p>
+        </article>
+
+        <!-- Nicholas Heldfond -->
+        <article class="team-card" aria-labelledby="nich-name">
+          <img class="team-photo"
+               src="images/nicholas_heldfond.png"
+               alt="Nicholas Heldfond"
+               onerror="if(!this.dataset.t){this.dataset.t=1;this.src='images/Nicholas_Heldford.png';}else if(!this.dataset.u){this.dataset.u=1;this.src='images/nicholas_heldfond.jpg';}else{this.style.display='none';}">
+          <h3 id="nich-name">Nicholas Heldfond</h3>
+          <div class="member-title">Co-Founder | Partner | Investor</div>
+          <div class="member-collaboration">Collaboration with Kenetic Capital</div>
+          <p class="member-bio">Nicholas partners with Kenetic Capital to back innovative ventures and scale technology-driven companies.</p>
+        </article>
+
+        <!-- Walter Kowtoniuk -->
+        <article class="team-card" aria-labelledby="walt-name">
+          <img class="team-photo"
+               src="images/walter_kowtoniuk.png"
+               alt="Walter Kowtoniuk"
+               onerror="if(!this.dataset.t){this.dataset.t=1;this.src='images/Walter_Kowtoniuk.png';}else if(!this.dataset.u){this.dataset.u=1;this.src='images/walter_kowtoniuk.jpg';}else{this.style.display='none';}">
+          <h3 id="walt-name">Walter Kowtoniuk</h3>
+          <div class="member-title">Advisor | Partner | Investor</div>
+          <div class="member-collaboration">Collaboration with Third Rock Ventures</div>
+          <p class="member-bio">Walt focuses on translating genetics & genomics into patient-centered medicines and practical company building.</p>
+        </article>
+
+        <!-- Howard Greenfield -->
+        <article class="team-card" aria-labelledby="howard-name">
+          <img class="team-photo"
+               src="images/howard_greenfield.png"
+               alt="Howard Greenfield"
+               onerror="if(!this.dataset.t){this.dataset.t=1;this.src='images/Howard_Greenfield.png';}else if(!this.dataset.u){this.dataset.u=1;this.src='images/howard_greenfield.jpg';}else{this.style.display='none';}">
+          <h3 id="howard-name">Howard Greenfield</h3>
+          <div class="member-title">Operating Partner | Investor</div>
+          <div class="member-collaboration">Collaboration with Canaan Partner</div>
+          <p class="member-bio">Howard helps portfolio companies with go-to-market strategy, sales, and customer success.</p>
+        </article>
       </div>
 
-      <!-- Nicholas -->
-      <div class="team-card">
-        <img src="images/nicholas_heldfond.png" alt="Nicholas Heldfond" class="team-photo">
-        <h3>Nicholas Heldfond</h3>
-        <p class="member-title">Co-Founder | Partner | Investor</p>
-        <p class="member-collaboration">Collaboration with Kenetic Capital</p>
-        <p class="member-bio">Nicholas collaborates with Kenetic Capital to support innovative ventures, combining entrepreneurship and investment to drive lasting impact.</p>
-      </div>
-
-      <!-- Walter -->
-      <div class="team-card">
-        <img src="images/walter_kowtoniuk.png" alt="Walter Kowtoniuk" class="team-photo">
-        <h3>Walter Kowtoniuk</h3>
-        <p class="member-title">Advisor | Partner | Investor</p>
-        <p class="member-collaboration">Collaboration with Third Rock Ventures</p>
-        <p class="member-bio">Walter is passionate about improving patient lives by turning genetics and genomics insights into new medicines.</p>
-      </div>
-
-      <!-- Howard -->
-      <div class="team-card">
-        <img src="images/howard_greenfield.png" alt="Howard Greenfield" class="team-photo">
-        <h3>Howard Greenfield</h3>
-        <p class="member-title">Operating Partner | Investor</p>
-        <p class="member-collaboration">Collaboration with Canaan Partner</p>
-        <p class="member-bio">Howard Greenfield helps portfolio companies with go-to-market strategy, sales, and customer success.</p>
-      </div>
-    </div>
-
-    <section class="hidden-partners-section">
-      <h2>Our Extended Network</h2>
-      <p>Our capabilities are amplified by an extensive network of strategic partners who operate discreetly. These trusted collaborators provide invaluable expertise, confidential insights, and crucial access to opportunities.</p>
+      <!-- Extended network -->
+      <section class="hidden-partners-section" aria-labelledby="network-title">
+        <h2 id="network-title">Our Extended Network</h2>
+        <p>We amplify impact through a discreet network of strategic partners that provide expertise, insight and access to opportunities.</p>
+      </section>
     </section>
-  </section>
+  </main>
+
+  <!-- Footer (small corner logo) -->
+  <footer class="main-footer">
+    <div class="footer-bottom-text">
+      <p>© Copyright 2025 NexasBridge Advisors. All Rights Reserved.</p>
+      <p><a href="terms.html">Terms of Use</a> &nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+    <img class="corner-logo" src="images/nexasbridge_logo.png" alt="NexasBridge" onerror="this.style.display='none'">
+  </footer>
 
 </body>
 </html>
