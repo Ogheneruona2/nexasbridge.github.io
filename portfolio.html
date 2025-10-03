@@ -1,100 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - NexasBridge</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - NexasBridge</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Portfolio Layout */
+    .portfolio-section {
+      padding: 50px 10%;
+      background: #f9fafb;
+      text-align: center;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-section p {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: left;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-item h3 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      color: #222;
+    }
+
+    .portfolio-item p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header -->
-   <header>
+  <!-- Header -->
+  <header>
     <div class="header-container">
-        <div class="logo-container">
-            <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="site-logo">
-        </div>
-        <nav class="centered-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="initiatives.html">Initiatives</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="team.html">Team</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <p class="tagline">Proven Support for Bold Futures</p>
+      <div class="logo-container">
+        <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="site-logo">
+      </div>
+      <nav class="centered-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="initiatives.html">Initiatives</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="tagline">Proven Support for Bold Futures</p>
     </div>
-</header>
+  </header>
 
-    </header>
+  <!-- Main Content -->
+  <main>
+    <section class="portfolio-section">
+      <h2>Our Portfolio</h2>
+      <p>
+        Our portfolio includes a diverse range of innovative projects and companies 
+        that align with our strategic vision. We are proud to support bold entrepreneurs 
+        who are shaping the future in various sectors.
+      </p>
 
-    <!-- Main Content -->
-    <main class="home-main">
-        <section class="mission-vision">
-            <h2>Our Portfolio</h2>
-            <p>
-                Our portfolio includes a diverse range of innovative projects and companies that align with our strategic vision. 
-                We are proud to support bold entrepreneurs who are shaping the future in various sectors.
-            </p>
-        </section>
-
-        <section class="portfolio-section">
-            <div class="portfolio-grid-container">
-
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image-placeholder"></div>
-                    <div class="portfolio-details">
-                        <h3>Project: Parity Technology</h3>
-                        <p><strong>Themes / Sectors:</strong> Decentralized Web, IT Services, IT Consulting, Technology Innovation</p>
-                        <p><strong>Investment Year & Stage:</strong> 2021 (Seed)</p>
-                        <p><strong>Target Geographies:</strong> Global (HQ in London, with international reach)</p>
-                        <p><strong>Collaboration with:</strong> Kenetic Capital</p>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image-placeholder"></div>
-                    <div class="portfolio-details">
-                        <h3>Project: HorizonLab</h3>
-                        <p><strong>Themes / Sectors:</strong> Blockchain, Web3, Digital Assets, Technology Innovation</p>
-                        <p><strong>Investment Year & Stage:</strong> Not specified</p>
-                        <p><strong>Target Geographies:</strong> Global</p>
-                        <p><strong>Collaboration with:</strong> Kenetic Capital</p>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image-placeholder"></div>
-                    <div class="portfolio-details">
-                        <h3>Project: Seaport Therapeutics</h3>
-                        <p><strong>Themes / Sectors:</strong> Biopharmaceuticals, Neuropsychiatry, Drug Development, Glyph Technology Platform</p>
-                        <p><strong>Investment Year & Stage:</strong> 2024 (Clinical Stage)</p>
-                        <p><strong>Target Geographies:</strong> United States (Boston, MA)</p>
-                        <p><strong>Collaboration with:</strong> Third Rock Ventures</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <!-- Small Logo at Corner -->
-    <footer class="main-footer">
-        <div class="footer-content-wrapper">
-            <div class="footer-left">
-                <p>
-                    NexasBridge offers comprehensive support for emerging projects, from innovative funding to strategic resources, empowering bold futures.
-                </p>
-            </div>
+      <div class="portfolio-grid">
+        
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+          <h3>Project: Parity Technology</h3>
+          <p><strong>Themes / Sectors:</strong> Decentralized Web, IT Services, IT Consulting, Technology Innovation</p>
+          <p><strong>Investment Year & Stage:</strong> 2021 (Seed)</p>
+          <p><strong>Target Geographies:</strong> Global (HQ in London, with international reach)</p>
+          <p><strong>Collaboration with:</strong> Kenetic Capital</p>
         </div>
-        <div class="footer-bottom-text">
-            <p>© 2025 NexasBridge. All rights reserved.</p>
+
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item">
+          <h3>Project: HorizonLab</h3>
+          <p><strong>Themes / Sectors:</strong> Blockchain, Web3, Digital Assets, Technology Innovation</p>
+          <p><strong>Investment Year & Stage:</strong> Not specified</p>
+          <p><strong>Target Geographies:</strong> Global</p>
+          <p><strong>Collaboration with:</strong> Kenetic Capital</p>
         </div>
-        <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="corner-logo">
-    </footer>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item">
+          <h3>Project: Seaport Therapeutics</h3>
+          <p><strong>Themes / Sectors:</strong> Biopharmaceuticals, Neuropsychiatry, Drug Development, Glyph Technology Platform</p>
+          <p><strong>Investment Year & Stage:</strong> 2024 (Clinical Stage)</p>
+          <p><strong>Target Geographies:</strong> United States (Boston, MA)</p>
+          <p><strong>Collaboration with:</strong> Third Rock Ventures</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content-wrapper">
+      <div class="footer-left">
+        <p>
+          NexasBridge offers comprehensive support for emerging projects, 
+          from innovative funding to strategic resources, empowering bold futures.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom-text">
+      <p>© 2025 NexasBridge. All rights reserved.</p>
+    </div>
+    <img src="images/nexasbridge_logo.png" alt="NexasBridge Logo" class="corner-logo">
+  </footer>
 
 </body>
 </html>
