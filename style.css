@@ -244,4 +244,18 @@
     margin-bottom: 20px;  /* spacing below heading */
     color: #111827;       /* dark color for readability */
 }
+.team-photo {
+    width: 150px;       /* adjust size as needed */
+    height: 150px;
+    object-fit: cover;  /* keeps image ratio clean */
+    border-radius: 50%; /* makes it round */
+}
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
 
